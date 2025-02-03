@@ -1,0 +1,139 @@
+
+.logo {
+    width: 200px;
+    height: auto; 
+    position: absolute; 
+    top: 125px;
+    right: 0;
+}
+body {
+    background: linear-gradient(to bottom, #fcc7d0, rgb(249, 142, 167));
+    
+    margin-left: 50px;
+   
+}  
+nav {
+    background-color: #fbfbfb;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a {
+    color: rgb(241, 192, 192);
+    margin: 0 15px;
+    font-size: 18px;
+    font-family: "smooch sans", sans-serif;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+h1 {
+    color: rgb(248, 9, 112);
+    text-align: center;
+    font-size: 5rem;
+    font-family: "smooch sans", sans-serif;
+}
+h2{
+    font-size: 2rem;
+    color:rgb(248, 9, 112);
+}
+h3{
+    font-size: 2rem;
+    color: rgb(248, 9, 112);
+}
+.airplane {
+    position: fixed; 
+    top: 20px; 
+    left: -50px; 
+    z-index: 1000; 
+}
+.airplane img {
+    width: 150px; 
+    height: auto; 
+    animation: fly-across 30s linear infinite; 
+}
+
+@keyframes fly-across {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(110vw); 
+    }
+}
+img{
+    width: 30%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+.gallery {
+    display: flex; 
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 300px; 
+    margin: 20px auto; 
+    margin-left: 0;
+}
+
+.gallery img {
+    min-width: 100%; 
+    flex-shrink: 0;
+    animation: slide-horizontal 15s infinite linear; 
+}
+
+@keyframes slide-horizontal {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(-200%); 
+    }
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 50px ;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: rgb(248, 9, 112);
+}
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(236, 57, 191);
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(236, 57, 191);
+}
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
